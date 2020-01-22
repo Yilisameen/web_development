@@ -1,0 +1,302 @@
+body, html {
+    width: 100%;
+    margin: 0;
+  }  
+
+.bg-image {
+    background-image: url("background.jpg");
+    height: 100%; 
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* .navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } */
+  .navbar-content-left{
+    float: left;
+    font-size: 16px;
+    color: rgb(58, 27, 27);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar-content-right{
+    float: right;
+    font-size: 16px;
+    color: rgb(58, 27, 27);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(58, 27, 27);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(85, 62, 62, 0.4);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(85, 62, 62, 0.4);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(58, 27, 27);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: rgba(85, 62, 62, 0.822);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .row {
+    display: flex;
+    width: 90%;
+    margin: auto; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column {
+    flex: 30%;
+    padding: 0 4px;
+  }
+
+  .column img {
+    margin-top: 4px;
+    vertical-align: middle;
+    border-radius: 8px;
+  }
+  .column img:hover {
+    opacity: 0.4;
+  }
+
+  .wrapper {
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    grid-template-areas: 
+    'a a a a a a b b'
+    'a a a a a a b b'
+    'a a a a a a b b'
+    'a a a a a a c c'
+    'd d e e f f c c'
+    'd d e e f f c c';
+    grid-gap: 4px;
+
+  }
+  .one {
+    grid-area: a;
+  }
+  .two { 
+    grid-area: b;
+  }
+  .three {
+    grid-area: d;
+  }
+  .four {
+    grid-area: e;
+  }
+  .five {
+    grid-area: f;
+  }
+  .six {
+    grid-area: c;
+  }
+  .wrapper img {
+    /* margin-top: 4px; */
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle; 
+    border-radius: 8px;
+  }
+  .wrapper img:hover {
+    opacity: 0.4;
+  }
+
+   .search-form {
+    margin-top: 15%;
+    margin-left: 45%;
+  } 
+
+  form.example input[type=text] {
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.151);
+    float: left;
+    width: 80%;
+    background: #f1f1f1a8;
+    font-family: 'Indie Flower', cursive;;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0);
+    font-size: 20px;
+    border: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+  }
+  
+  form.example button:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  a {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .title {
+    font-family: 'Indie Flower', cursive;
+    font-size: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .slogan {
+      font-family: 'Dancing Script', cursive;
+      color: rgba(0, 0, 0, 0.514);
+      font-size: 40px;
+  }
+
+  .footer {
+      margin-top: 30px;
+      left: 0;
+      bottom: 0;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 100px;
+      background-color: rgba(85, 62, 62, 0.822);
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+  }
+  .footer-link {
+    flex: 30%;
+  }
+
+   @media (max-width: 800px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+    .wrapper {
+        grid-template-areas:
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f';
+        grid-gap: 4px;
+    }
+    .footer {
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-link {
+      flex: 90%;
+    }
+
+    .title {
+        font-family: 'Indie Flower', cursive;
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    
+    .slogan {
+        font-family: 'Dancing Script', cursive;
+        color: rgba(0, 0, 0, 0.514);
+        font-size: 35px;
+    }
+    .navbar {
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.2);
+        position: relative;
+      }
+    .navbar #myLinks {
+        display: none;
+      }
+    .bg-image {
+    background-image: url("background.jpg");
+    height: 40%; 
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    }
+    .search-form {
+        margin-top: 11%;
+        margin-right: 10%;
+    }
+  }
+
+
+
+
+
+
+
+ 
+
+
+
