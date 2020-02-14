@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Moon Board</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower|Ubuntu&display=swap">
+    </head>
+
+    <script src="script.js"></script>
+
+    <body onkeypress="handleEnter(event)">
+        <div>
+            <h1 class="slogan">Search:</h1>
+            <form class="searchForm">
+                <div class="searchArea">
+                    <input type="text" placeholder="Search.." id="searchKey">
+                    <button type="button" onclick="searchImage();"><i class="fa fa-search"></i></input>
+                </div>
+        </div> 
+
+        <div class="relatedButton">
+            <div id="relatedWords"></div>
+        </div>
+
+        <div class="row">
+            <div class="resultsArea">
+                <h2 class="title">Search Result:</h2>
+                <div class="picArea" id="searchResults"></div>
+            </div>
+    
+            <div class="resultsArea">
+                <h2 class="title">Your Board:</h2>
+                <div class="picArea" id="board"></div>
+            </div>
+        </div>
+    </body>
+    
+</html>

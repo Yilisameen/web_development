@@ -1,0 +1,112 @@
+img {
+    width: 200px;
+    height: 150px;
+}
+
+.slogan {
+    font-family: 'Dancing Script', cursive;
+    color: rgba(0, 0, 0, 1);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.searchArea {
+    margin: auto;
+    width: 50%;
+}
+
+form.searchForm input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.151);
+    width: 90%;
+    background: #f1f1f1a8;
+    font-family: 'Indie Flower', cursive;;
+}
+  
+form.searchForm button {
+    width: 5%;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0);
+    font-size: 20px;
+    border: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+}
+  
+form.searchForm::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.relatedButton {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    align-content: center;
+}
+
+.relatedButton button {
+    background-color: rgba(128, 128, 128, 0.151);
+    border: 2px solid rgba(0, 0, 0, 0.534);
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    margin: 4px 2px;
+    border-radius: 15px;
+}
+
+.relatedButton button:hover {
+    opacity: 0.5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    padding: 0 4px;
+}
+
+.resultsArea {
+    margin: auto;
+    margin-top: 20px;
+    width: 45%;
+}
+
+
+.picArea {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1%;
+    padding-right: 1%;
+    justify-content: center;
+}
+
+.picArea img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+    vertical-align: middle;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.picArea img:hover {
+    opacity: 0.5;
+}
+
+.title {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(8, 1, 1);
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 3px solid gray;
+}
